@@ -6,6 +6,8 @@ This is a Docker Image which contains the Shogi AI [技巧](https://github.com/g
 
 # Usage
 
+## To execute AI
+
 ```
 $ docker run -it naoys/gikou
 (interactive USI session)
@@ -40,3 +42,12 @@ info depth 2 seldepth 2 time 1 nodes 827 nps 827000 hashfull 142 score cp 227 mu
 info depth 21 seldepth 22 time 2904 nodes 2092176 nps 720446 hashfull 176 score cp 104 multipv 1 pv 9g9f 9c9d 1g1f 1c1d 6h7i 6a5b 2i3g 8a7c 6g6f 5a4b 4g5f 6c5d 4f4e 4b3a 4i5h 5b6c 2h4h 6d6e 6f6e 5d6e
 bestmove 9g9f
 ```
+
+## To build static linked binary
+
+Static linked binary `builder/gikou` will be created.
+
+```
+$ ./builder/runbuild.sh
+```
+
